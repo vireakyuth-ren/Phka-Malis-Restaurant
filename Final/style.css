@@ -1,0 +1,294 @@
+/* * {
+    overflow-inline: hidden;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;       
+    background-color: white;
+    height: 13.5vh;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;   
+}
+
+/* Shrink effect when scrolling */
+header {
+    transition: all 0.4s ease;
+    transform-origin: top;
+    z-index: 1000;
+}
+
+header .logo {
+    height: 80px;
+}
+
+/* 👇 This runs when user scrolls down */
+header.shrink {
+    height: 10vh; /* slightly smaller header */
+    transform: scaleY(0.95); /* zoom-out effect */
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: make logo shrink too */
+header.shrink .logo {
+    transform: scale(0.9);
+    transition: transform 0.4s ease;
+    height: 65px;
+}
+
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 70px;
+    background-color: white;
+}
+
+nav a {
+    color: #7B5B44;
+    text-decoration: none;
+    background-color: white;
+
+}
+
+nav a:hover {
+    transition: 1s;
+    color: #A28C7C;
+    transform: scale(1.05);
+
+}
+    
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: visible;
+}
+
+header, section, footer {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+.bookbtn{
+    background: #7B5B44;
+    font-size: 2vw;
+    font-family: Garamond;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.bookbtn:hover {
+    transition: 1s;
+    transform: scale(1.05);
+    background: white;
+    color: rgb(103, 56, 56);
+}
+
+.hero {
+    height: 86.5vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3)), url('https://changkrankhmer.opte.io/wp-content/uploads/sites/3113/2019/04/home-welcome.jpg');
+    background-position: center -50px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+    background-color: transparent;
+}   
+
+.hero-content h1{
+    background-color: transparent;
+    font-size: 6vw;
+}   
+
+.about-contents  {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem 3rem;
+}
+
+.about-section {
+    font-size: 1.3rem;
+}
+
+.learn-more {
+    padding: 0.8rem 3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #7B5B44;
+    color: white;
+    border: 1px;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    background-color: #A28C7C;
+}
+
+.menu {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    color: #7B5B44;
+    text-align: center;
+}
+
+.chef-img {
+    max-width: 100%;
+    height: 115vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.menu h1{
+    padding-top: 3rem;
+}
+
+.menu h3{
+    padding-bottom: 3rem;
+}
+
+.menu-contents {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 180px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.menu-section {
+    color: black;
+    flex-basis: calc(100% / 3 - 20px);
+}
+
+.menu-section img {
+    width: 290px;
+    height: 190px;
+}
+
+.footer {
+    background-color: white;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-contents  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    color: #7B5B44;
+}
+.footer-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #4a2b15;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    overflow-x: hidden;  
+}
+
+.footer img {
+    max-width: 100%;      
+    height: auto;
+}
+
+.food1 {
+    width: 250px;
+    height: 175px;
+}
+
+.food2 {
+    width: 250px;
+    height: 175px;
+}
+
+.food3 {
+    width: 250px;
+    height: 175px;
+}
+
+.food4 {
+    width: 250px;
+    height: 175px;
+}
+
+.food5 {
+    width: 250px;
+    height: 175px;
+}
+
+.footer-section li{
+    padding-bottom: 0.4rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #392619;
+    padding-top: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #7B5B44;
+}
+
+.footer-section a:hover {
+    color: #A28C7C;
+} 
+
+.contact-info .address:hover {
+    color: #A28C7C; 
+}
+
+.contact-info .email:hover {
+    color: #A28C7C; 
+}
+
+.contact-info .telephone:hover {
+    color: #A28C7C; 
+}
+
+.map {
+    max-width: 30vw;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    height: 35vh;
+    padding-top: 30px;
+
+}
+
+.copyrights {
+    padding-left: 100px;
+    color: #7B5B44;
+}
