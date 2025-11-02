@@ -62,8 +62,92 @@ nav a:hover {
     transform: scale(1.05);
 
 }
+.rev_form {
+    margin: 10px auto; /* centers horizontally */
+    width: 50%;        /* adjust as needed */
+    text-align: center;
+    padding: 20px;
     
+}
+h1 {
+    font-size: 30px;
+    color:  #7B5B44;
 
+}
+.customers_info input {
+    display: inline;
+    margin: 10px 0px 10px 10px;
+    width: 20%;
+    padding: 5px;;
+    border: 0.5px solid #7B5B44;
+    
+}
+.customers_info select {
+    margin: 10px 0px 10px 10px;
+    width: 20%;
+    padding: 5px;;
+    border: 0.5px solid #7B5B44;
+}
+
+.formbox {
+    width: 90%;
+    border: 2px solid #7B5B44;
+    padding: 30px 20px 30px;
+    
+}
+
+.formbox input{
+    width: 400px;
+    border: 0.5px solid #7B5B44;
+    padding: 7px;
+}
+.formbox label {
+    text-align: left;
+    
+}
+.formbox textarea {
+    width: 400px;
+}
+
+.location {
+    display: inline-flex;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;               
+    width: 100%;  
+
+}
+.panel-info {
+   border: 0.5px solid #7B5B44;
+   padding: 10px 30px;
+   margin-left: 30px;
+   font-size: 13px;
+   
+}
+.panel-info h2 {
+    color:#7B5B44;
+    text-align: center;
+}
+.panel-info h3 {
+    color:#7B5B44;
+    text-align: center;
+}
+.panel-info p {
+    font-weight: 50;
+}
+.location-grids {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 30px;               
+  width: 100%;             
+}
+.location-grids h3 {
+    color:#7B5B44;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -291,4 +375,9 @@ header, section, footer {
 .copyrights {
     padding-left: 100px;
     color: #7B5B44;
+
+}
+.active_page {
+    font-weight: bold;
+    color:#392619;
 }
