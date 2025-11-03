@@ -71,21 +71,21 @@ nav a:hover {
 }
 h1 {
     font-size: 30px;
-    color:  #7B5B44;
+    color:  #FFF;
 
 }
 .customers_info input {
     display: inline;
     margin: 10px 0px 10px 10px;
     width: 20%;
-    padding: 5px;;
+    padding: 5px;
     border: 0.5px solid #7B5B44;
     
 }
 .customers_info select {
     margin: 10px 0px 10px 10px;
     width: 20%;
-    padding: 5px;;
+    padding: 5px;
     border: 0.5px solid #7B5B44;
 }
 
@@ -402,4 +402,5 @@ header, section, footer {
     font-weight: bold;
     color:#392619;
 }
+
 
