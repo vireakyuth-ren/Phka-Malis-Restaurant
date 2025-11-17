@@ -115,6 +115,11 @@ h1 {
 .formbox textarea {
     width: 400px;
 }
+.formbox select {
+    width: 400px;
+    border: 0.5px solid #7B5B44;
+    padding: 7px;
+}
 
 .location {
     display: inline-flex;
@@ -409,6 +414,7 @@ header, section, footer {
     font-weight: bold;
     color:#392619;
 }
+
 
 
 
