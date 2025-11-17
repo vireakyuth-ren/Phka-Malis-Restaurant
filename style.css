@@ -62,6 +62,11 @@ nav a:hover {
     transform: scale(1.05);
 
 }
+h1 {
+    font-size: 30px;
+    color:  #FFF;
+
+}
 .rev_form {
     margin: 10px auto; /* centers horizontally */
     width: 50%;        /* adjust as needed */
@@ -69,10 +74,12 @@ nav a:hover {
     padding: 20px;
     
 }
-h1 {
+.rev_form h1 {
     font-size: 30px;
-    color:  #FFF;
-
+    color: #7B5B44
+}
+.rev_form p {
+    font-size: 18px;
 }
 .customers_info input {
     display: inline;
@@ -402,5 +409,6 @@ header, section, footer {
     font-weight: bold;
     color:#392619;
 }
+
 
 
