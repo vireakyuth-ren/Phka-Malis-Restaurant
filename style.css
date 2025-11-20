@@ -660,4 +660,734 @@ header, section, footer {
 }
 
 
+.intro-1 {
+position: relative;
+width: 100%;
+height: 60vh;
+min-height: 400px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.intro-1::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url('team-background.jpg');
+background-size: cover;
+background-position: center;
+opacity: 0.3;
+}
+
+.intro-1 h1 {
+position: relative;
+font-size: 4rem;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 4px;
+text-align: center;
+text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+z-index: 1;
+}
+
+/* Intro-Story Section - Two Columns */
+.intro-story {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+padding: 5rem 5%;
+align-items: center;
+background-color: #f9f9f9;
+}
+
+.story-text {
+padding-right: 2rem;
+}
+
+.story-text h2 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 1.5rem;
+font-weight: 700;
+}
+
+.story-text p {
+font-size: 1.1rem;
+line-height: 1.8;
+color: #666;
+margin-bottom: 1.2rem;
+}
+
+.story-image {
+width: 100%;
+height: 500px;
+background-color: #ddd;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.story-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.story-image::before {
+content: 'Image Placeholder';
+color: #999;
+font-size: 1.2rem;
+}
+
+/* Responsive for the intro-stroy section */
+
+@media (max-width: 1024px) {
+.intro-1 h1 {
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 768px) {
+.intro-1 {
+    height: 50vh;
+    min-height: 300px;
+}
+
+.intro-1 h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.intro-story {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+.story-text {
+    padding-right: 0;
+}
+
+.story-text h2 {
+    font-size: 2rem;
+}
+
+.story-text p {
+    font-size: 1rem;
+}
+
+.story-image {
+    height: 350px;
+}
+}
+
+@media (max-width: 480px) {
+.intro-1 h1 {
+    font-size: 1.8rem;
+}
+
+.story-text h2 {
+    font-size: 1.6rem;
+}
+}
+
+/* Atmosphere Section */
+
+.intro-the-atmoshphere {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+padding: 5rem 5%;
+align-items: center;
+background-color: #392619;
+}
+
+.atmosphere-text {
+padding-right: 2rem;
+color: #fff;
+}
+
+.atmosphere-text h2 {
+font-size: 2.5rem;
+color: #fff;
+margin-bottom: 1.5rem;
+font-weight: 700;
+}
+
+.atmosphere-text p {
+font-size: 1.1rem;
+line-height: 1.8;
+color: #e0e0e0;
+margin-bottom: 1.2rem;
+}
+
+.atmosphere-image {
+width: 100%;
+height: 500px;
+background-color: #5a4033;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.atmosphere-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.atmosphere-image::before {
+content: 'Image Placeholder';
+color: #999;
+font-size: 1.2rem;
+}
+
+/* Intro-chef Section - Four Cards */
+.intro-chef {
+padding: 5rem 5%;
+background-color: #f9f9f9;
+}
+
+.intro-chef h2 {
+text-align: center;
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 3rem;
+font-weight: 700;
+}
+
+.chef-cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.chef-card {
+background-color: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+cursor: pointer;
+height: 350px;
+}
+
+.chef-card:hover {
+transform: translateY(-10px) scale(1.03);
+box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+height: 420px;
+}
+
+.chef-card-image {
+width: 100%;
+height: 250px;
+background-color: #ddd;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.chef-card-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.chef-card-image::before {
+content: 'Chef Photo';
+color: #999;
+}
+
+.chef-card-content {
+padding: 1.5rem;
+text-align: center;
+}
+
+.chef-card-content h3 {
+font-size: 1.5rem;
+color: #333;
+margin-bottom: 0.5rem;
+}
+
+.chef-card-description {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease;
+color: #666;
+font-size: 0.95rem;
+line-height: 1.6;
+margin-top: 0.5rem;
+}
+
+.chef-card:hover .chef-card-description {
+max-height: 300px;
+}
+
+
+/* Intro-meet-the-team Section - Three Cards with Unique Design */
+.intro-meet-the-team {
+padding: 5rem 5%;
+background-color: #fff;
+}
+
+.intro-meet-the-team h2 {
+text-align: center;
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 3rem;
+font-weight: 700;
+}
+
+.team-cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2.5rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.team-card {
+position: relative;
+background-color: #392619;
+border-radius: 12px;
+overflow: hidden;
+height: 400px;
+transition: all 0.4s ease;
+}
+
+.team-card:hover {
+transform: scale(1.05);
+}
+
+.team-card-image {
+width: 100%;
+height: 100%;
+background-color: #5a4033;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+position: relative;
+}
+
+.team-card-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.team-card-image::before {
+content: 'Team Photo';
+color: #999;
+}
+
+.team-card-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: linear-gradient(to top, rgba(57, 38, 25, 0.95), transparent);
+padding: 2rem 1.5rem 1.5rem;
+transform: translateY(60%);
+transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-card-overlay {
+transform: translateY(0);
+}
+
+.team-card-overlay h3 {
+font-size: 1.6rem;
+color: #fff;
+margin-bottom: 0.5rem;
+}
+
+.team-card-overlay .team-role {
+font-size: 1rem;
+color: #d4af37;
+margin-bottom: 1rem;
+}
+
+.team-card-overlay .team-description {
+font-size: 0.9rem;
+color: #e0e0e0;
+line-height: 1.6;
+opacity: 0;
+transition: opacity 0.4s ease 0.1s;
+}
+
+.team-card:hover .team-card-overlay .team-description {
+opacity: 1;
+}
+
+/* Responsive Design for new sections */
+@media (max-width: 768px) {
+.intro-the-atmoshphere {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+.atmosphere-text {
+    padding-right: 0;
+}
+
+.atmosphere-text h2 {
+    font-size: 2rem;
+}
+
+.atmosphere-text p {
+    font-size: 1rem;
+}
+
+.atmosphere-image {
+    height: 350px;
+}
+
+.chef-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.team-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.team-card {
+    height: 350px;
+}
+}
+
+@media (max-width: 480px) {
+.atmosphere-text h2 {
+    font-size: 1.6rem;
+}
+
+.chef-card {
+    height: 320px;
+}
+
+.chef-card-image {
+    height: 220px;
+}
+}
+
+/* Specialty Section - Four Cards */
+.intro-specialty {
+padding: 5rem 5%;
+background-color: #fff;
+}
+
+.specialty-cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2.5rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+
+.specialty-card {
+background-color: #fff;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialty-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.specialty-card-image {
+width: 100%;
+height: 280px;
+overflow: hidden;
+position: relative;
+}
+
+.specialty-card-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+
+.specialty-card:hover .specialty-card-image img {
+transform: scale(1.08);
+}
+
+.specialty-card-content {
+padding: 2rem 1.8rem;
+text-align: center;
+}
+
+.specialty-card-content h3 {
+font-size: 1.8rem;
+color: #392619;
+margin-bottom: 1rem;
+font-weight: 700;
+}
+
+.specialty-card-content p {
+font-size: 1rem;
+line-height: 1.7;
+color: #666;
+}
+
+/* Booking Call-to-Action Section */
+.intro-booking {
+position: relative;
+width: 100%;
+min-height: 500px;
+background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1600');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 0;
+}
+
+.intro-booking::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(57, 38, 25, 0.75);
+}
+
+.booking-content {
+position: relative;
+z-index: 2;
+text-align: center;
+padding: 3rem 2rem;
+}
+
+.booking-overlay h2 {
+font-size: 3.5rem;
+color: #fff;
+margin-bottom: 1.5rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+.booking-overlay p {
+font-size: 1.3rem;
+color: #e0e0e0;
+margin-bottom: 2.5rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.reserve-button {
+display: inline-block;
+padding: 1.2rem 3.5rem;
+background-color: #d4af37;
+color: #392619;
+font-size: 1.2rem;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 50px;
+transition: all 0.3s ease;
+letter-spacing: 2px;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.reserve-button:hover {
+background-color: #fff;
+color: #392619;
+transform: translateY(-3px);
+box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+.intro-1 h1 {
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 768px) {
+.intro-1 {
+    height: 50vh;
+    min-height: 300px;
+}
+
+.intro-1 h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.intro-story {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+.story-text {
+    padding-right: 0;
+}
+
+.story-text h2 {
+    font-size: 2rem;
+}
+
+.story-text p {
+    font-size: 1rem;
+}
+
+.story-image {
+    height: 350px;
+}
+
+.intro-the-atmoshphere {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+.atmosphere-text {
+    padding-right: 0;
+}
+
+.atmosphere-text h2 {
+    font-size: 2rem;
+}
+
+.atmosphere-text p {
+    font-size: 1rem;
+}
+
+.atmosphere-image {
+    height: 350px;
+}
+
+.chef-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.team-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.team-card {
+    height: 350px;
+}
+
+.specialty-cards {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.specialty-card-image {
+    height: 220px;
+}
+
+.specialty-card-content h3 {
+    font-size: 1.5rem;
+}
+
+.specialty-card-content p {
+    font-size: 0.95rem;
+}
+
+.intro-booking {
+    min-height: 400px;
+    background-attachment: scroll;
+}
+
+.booking-overlay h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.booking-overlay p {
+    font-size: 1.1rem;
+}
+
+.reserve-button {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+.intro-1 h1 {
+    font-size: 1.8rem;
+}
+
+.story-text h2 {
+    font-size: 1.6rem;
+}
+
+.atmosphere-text h2 {
+    font-size: 1.6rem;
+}
+
+.chef-card {
+    height: 320px;
+}
+
+.chef-card-image {
+    height: 220px;
+}
+
+.intro-specialty {
+    padding: 3rem 5%;
+}
+
+.specialty-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.specialty-card-image {
+    height: 200px;
+}
+
+.booking-overlay h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.booking-overlay p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.reserve-button {
+    padding: 0.9rem 2rem;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+}
+
+
+
+
 
