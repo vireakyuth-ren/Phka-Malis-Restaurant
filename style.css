@@ -160,6 +160,45 @@ h1 {
 .location-grids h3 {
     color:#7B5B44;
 }
+@media (max-width: 1024px) {
+    .rev_form {width: 95%; margin: auto;}
+    .formbox input,
+    .formbox select,
+    .formbox textarea {width: 90%;}
+    .customers_info input,
+    .customers_info select {margin: 0;}
+}
+
+@media (max-width: 600px) {
+    .rev_form {width: 95%; padding: 10px;}
+    .rev_form p {font-size: 16px;}
+    .customers_info {display: flex; flex-direction: column; align-items: center;}
+    .customers_info input,
+    .customers_info select,
+    .formbox,
+    .formbox input,
+    .formbox textarea,
+    .formbox select {width: 100% !important; max-width: 100% !important;box-sizing: border-box;}
+    .book_btn {width: 100%; padding: 14px; font-size: 1.1em;}
+}
+
+@media (max-width: 900px) {
+    .location {flex-direction: column;text-align: center;}
+    .panel-info {margin: 20px;  width: 80%;}
+}
+
+@media (max-width: 600px) {
+    .panel-info {width: 95%; padding: 15px;}
+    .map-container iframe {width: 90%;height: 220px;}
+}
+@media (max-width: 950px) {
+    .location-grids { flex-wrap: wrap; text-align: center;}
+    .branhes {width: 45%;}
+}
+@media (max-width: 600px) {
+    .branhes { width: 90%;margin-bottom: 20px;}
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -1386,6 +1425,7 @@ box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
     letter-spacing: 1px;
 }
 }
+
 
 
 
