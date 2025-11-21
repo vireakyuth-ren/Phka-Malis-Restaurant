@@ -160,6 +160,14 @@ h1 {
 .location-grids h3 {
     color:#7B5B44;
 }
+.footer-message {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://www.remotelands.com/travelogues/app/uploads/2018/04/Siam-Reap-Restaurants.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5) contrast(1.1);
+}
 @media (max-width: 1024px) {
     .rev_form {width: 95%; margin: auto;}
     .formbox input,
@@ -1425,6 +1433,7 @@ box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
     letter-spacing: 1px;
 }
 }
+
 
 
 
