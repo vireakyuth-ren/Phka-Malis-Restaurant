@@ -70,7 +70,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
 header, section, footer {
@@ -156,10 +156,11 @@ header, section, footer {
 
 .about-section {
     font-size: 1.3rem;
-  
+    padding: 0;
+    margin: 0;
 }
 
-.about-section img{
+.about-contents img{
     width: 600px;
     height: 400px;
     border: 1px solid black;
@@ -243,6 +244,10 @@ header, section, footer {
     color: #000000;
 }
 
+.course-title1{
+    display: none;
+}
+
 .course-img {
     width: 200px;
     height: 150px;
@@ -268,20 +273,6 @@ header, section, footer {
     align-items: top;
     color: #7B5B44;
     text-align: center;
-}
-.footer-image {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #4a2b15;
-    padding: 20px 0px;
-    flex-wrap: wrap;
-    overflow-x: hidden;  
-}
-
-.footer img {
-    max-width: 100%;      
-    height: auto;
 }
 
 .footer-section li{
@@ -336,7 +327,112 @@ header, section, footer {
 
 }
 
+@media(max-width:768px){
+    .about-contents  {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin: auto 0;
+        padding: 0;
+    }
+    .about-contents img{
+        /* display: none; */
+        margin: 10px 0;
+        scale: 0.8;
+        width: 100%;
+    }
+    .about-section h1{
+        font-size: 20px;
+        padding: 0 50px;
+    }
+    .about-section p{
+        font-size: 12px;
+        padding: 0 50px;
+    }
+    .about-section{
+        margin: auto 0;
+    }    
+    .learn-more {
+        margin: auto 0px;
+        scale: 0.8;
+    }  
 
+    .menu-grid1{
+        padding: 0;
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-title{
+        display: none;
+    }
+    .course-title1{
+        display: contents;
+    }
+    .course-img{
+        scale: 1  ;
+        margin: 0 0 0 0;
+    }
+    .course-description, .course-name{
+        scale: 0.8;
+    }
+    .course-section{
+        padding: 0;
+        margin: 0;
+    }
+    .map{
+        scale: 0.65;
+    }
+
+    .copyrights {
+        padding-left: 20px;
+        color: #7B5B44;
+        font-size: 12px;
+    }
+    .footer-contents{
+        display: flex;
+        justify-content: space-between;
+    }   
+}
+
+@media(max-width:1300px){
+        .about-contents  {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin: auto 0;
+        padding: 0;
+    }
+    .about-contents img{
+        /* display: none; */
+        margin: 10px 0;
+        scale: 1;
+        width: 100%;
+    }
+    .about-section h1{
+        font-size: 30px;
+        padding: 0 50px;
+    }
+    .about-section p{
+        font-size: 20px;
+        padding: 0 50px;
+    }
+    .about-section{
+        margin: auto 0;
+    }    
+    .learn-more {
+        margin: auto 0px;
+        scale: 0.8;
+    }
+    .copyrights {
+        padding-left: 20px;
+        color: #7B5B44;
+        font-size: 15px;
+    }
+}
 
 
 /* RESERVATION PAGE */
