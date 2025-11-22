@@ -1,7 +1,4 @@
-/* * {
-    overflow-inline: hidden;
-} */
-
+/* HOME PAGE */
 header {
     display: flex;
     justify-content: space-between; 
@@ -63,28 +60,260 @@ nav a:hover {
 
 }
 
-
 h1 {
     color: #FFF;
     font-size: 48px;
     font-family: 'Times New Roman', Times, serif;
 }
-.footer-contents{
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: visible;
+}
+
+header, section, footer {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+.bookbtn{
+    background: #7B5B44;
+    font-size: 2vw;
+    font-family: Garamond;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.bookbtn:hover {
+    transition: 1s;
+    transform: scale(1.05);
+    background: white;
+    color: rgb(103, 56, 56);
+}
+.book_btn {
+  background-color: #785B44;
+  color: white;
+  width: 200px;              /* medium size */
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+  
+  display: block;            /* makes centering easier */
+  margin: 30px auto;         /* centers button horizontally */
+  text-align: center;        /* centers text inside */
+}
+
+.book_btn:hover {
+  background-color: #604732; /* subtle hover effect */
+}
+
+
+.hero {
+    height: 86.5vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5)), url('https://changkrankhmer.opte.io/wp-content/uploads/sites/3113/2019/04/home-welcome.jpg');
+    background-position: center -50px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
 }
 
-.divider-footer{
-    background-color: #604732;
-    height: 50px;
+.hero-content {
+    color: white;
+    max-width: 800px;
+    background-color: transparent;
+    
+}   
+
+.hero-content h1{
+    background-color: transparent;
+    font-size: 6vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+
+}   
+
+.about-contents  {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem 3rem;
 }
 
-#seasonal-menu{ 
+.about-section {
+    font-size: 1.3rem;
+  
+}
+
+.about-section img{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.about-section h1 {
+    color: #131313;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.about-section p{
+    padding-right: 100px;
+}
+
+.learn-more {
+    padding: 0.8rem 3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #7B5B44;
+    color: white;
+    border: 1px;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    background-color: #A28C7C;
+}
+
+.menu {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    color: #7B5B44;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.menu-bg {
+position: relative;
+width: 100%;
+min-height: 500px;
+background: linear-gradient(rgba(0,0,0,0.7)), url('chef2.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+display: block;
+align-items: center;
+justify-content: center;
+margin-bottom: 0;
+}
+    
+.menu-bg #header{ 
+    padding-top: 180px;
     font-size: 50px;
-    color: #573319;
+    color: #fff;
     font-weight: bold;
     text-shadow: 0 2px #a8a4a4;
 }
 
+.menu-bg #description {
+    padding-top: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: white;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-contents  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    color: #7B5B44;
+    text-align: center;
+}
+.footer-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #4a2b15;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    overflow-x: hidden;  
+}
+
+.footer img {
+    max-width: 100%;      
+    height: auto;
+}
+
+.footer-section li{
+    padding-bottom: 0.4rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #392619;
+    padding-top: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #7B5B44;
+}
+
+.footer-section a:hover {
+    color: #A28C7C;
+} 
+
+.contact-info .address:hover {
+    color: #A28C7C; 
+}
+
+.contact-info .email:hover {
+    color: #A28C7C; 
+}
+
+.contact-info .telephone:hover {
+    color: #A28C7C; 
+}
+
+.map {
+    max-width: 30vw;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    height: 35vh;
+    padding-top: 30px;
+
+}
+
+.copyrights {
+    padding-left: 100px;
+    color: #7B5B44;
+
+}
+
+
+
+
+/* RESERVATION PAGE */
 .rev_form {
     margin: 10px auto; /* centers horizontally */
     width: 50%;        /* adjust as needed */
@@ -229,262 +458,11 @@ h1 {
     .branch { width: 90%;margin-bottom: 20px;}
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: visible;
-}
-
-header, section, footer {
-    max-width: 100%;
-    overflow-x: clip;
-}
-
-.bookbtn{
-    background: #7B5B44;
-    font-size: 2vw;
-    font-family: Garamond;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: inline-block;
-    border-radius: 5px;
-}
-
-.bookbtn:hover {
-    transition: 1s;
-    transform: scale(1.05);
-    background: white;
-    color: rgb(103, 56, 56);
-}
-.book_btn {
-  background-color: #785B44;
-  color: white;
-  width: 200px;              /* medium size */
-  padding: 12px 25px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: background-color 0.3s;
-  
-  display: block;            /* makes centering easier */
-  margin: 30px auto;         /* centers button horizontally */
-  text-align: center;        /* centers text inside */
-}
-
-.book_btn:hover {
-  background-color: #604732; /* subtle hover effect */
-}
 
 
-.hero {
-    height: 86.5vh;
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.3)), url('https://changkrankhmer.opte.io/wp-content/uploads/sites/3113/2019/04/home-welcome.jpg');
-    background-position: center -50px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
 
-.hero-content {
-    color: white;
-    max-width: 800px;
-    background-color: transparent;
-}   
 
-.hero-content h1{
-    background-color: transparent;
-    font-size: 6vw;
-}   
-
-.about-contents  {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    margin: 2rem;
-    padding: 2rem 3rem;
-}
-
-.about-section {
-    font-size: 1.3rem;
-}
-
-.about-section h1 {
-    color: #131313;
-    text-align: center;
-}
-.learn-more {
-    padding: 0.8rem 3rem;
-    border-radius: 2px;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #7B5B44;
-    color: white;
-    border: 1px;
-    text-decoration: none;
-}
-
-.learn-more:hover {
-    background-color: #A28C7C;
-}
-
-.menu {
-    background-color: #FFF;
-    margin: 0;
-    padding: 0;
-    color: #7B5B44;
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.chef-img {
-    max-width: 100%;
-    height: 115vh;
-    width: 100vw;
-    margin: 0px;
-    padding: 0px;
-    display: block;
-}
-
-.menu h1{
-    padding-top: 3rem;
-}
-
-.menu h3{
-    padding-bottom: 3rem;
-}
-
-.menu-contents {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 180px;
-    flex-wrap: wrap;
-    padding-bottom: 100px;
-}
-
-.menu-section {
-    color: black;
-    flex-basis: calc(100% / 3 - 20px);
-}
-
-.menu-section img {
-    width: 290px;
-    height: 190px;
-}
-
-.footer {
-    background-color: white;
-    color: #000000;
-    margin: 0px;
-    padding: 0px;
-}
-
-.footer-contents  {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: top;
-    color: #7B5B44;
-}
-.footer-image {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #4a2b15;
-    padding: 20px 0px;
-    flex-wrap: wrap;
-    overflow-x: hidden;  
-}
-
-.footer img {
-    max-width: 100%;      
-    height: auto;
-}
-
-.food1 {
-    width: 250px;
-    height: 175px;
-}
-
-.food2 {
-    width: 250px;
-    height: 175px;
-}
-
-.food3 {
-    width: 250px;
-    height: 175px;
-}
-
-.food4 {
-    width: 250px;
-    height: 175px;
-}
-
-.food5 {
-    width: 250px;
-    height: 175px;
-}
-
-.footer-section li{
-    padding-bottom: 0.4rem;
-}
-
-.footer-section h3 {
-    margin-bottom: 10px;
-    color: #392619;
-    padding-top: 15px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section a {
-    text-decoration: none;
-    color: #7B5B44;
-}
-
-.footer-section a:hover {
-    color: #A28C7C;
-} 
-
-.contact-info .address:hover {
-    color: #A28C7C; 
-}
-
-.contact-info .email:hover {
-    color: #A28C7C; 
-}
-
-.contact-info .telephone:hover {
-    color: #A28C7C; 
-}
-
-.map {
-    max-width: 30vw;
-    width: 100%;
-    border: 0;
-    margin: 0;
-    height: 35vh;
-    padding-top: 30px;
-
-}
-
-.copyrights {
-    padding-left: 100px;
-    color: #7B5B44;
-
-}
+/* MENU PAGE */
 .active_page {
     font-weight: bold;
     color:#392619;
@@ -732,6 +710,8 @@ header, section, footer {
 }
 
 
+
+/* ABOUT US PAGE */
 .intro-1 {
 position: relative;
 width: 100%;
