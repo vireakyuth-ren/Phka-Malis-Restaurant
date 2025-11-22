@@ -192,7 +192,7 @@ header, section, footer {
 }
 
 .menu {
-    background-color: #FFF;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     color: #7B5B44;
@@ -202,17 +202,17 @@ header, section, footer {
 }
 
 .menu-bg {
-position: relative;
-width: 100%;
-min-height: 500px;
-background: linear-gradient(rgba(0,0,0,0.7)), url('chef2.jpg');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-display: block;
-align-items: center;
-justify-content: center;
-margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.7)), url('chef2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 }
     
 .menu-bg #header{ 
@@ -227,6 +227,32 @@ margin-bottom: 0;
     padding-top: none;
     color: #fff;
     font-size: 30px;
+}
+
+.menu-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 0 40px;
+    margin-bottom: 0;
+}
+
+.course-title{
+    color: #000000;
+}
+
+.course-img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid rgb(148, 127, 12);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.course-description{
+    color: #000000;
 }
 
 .footer {
